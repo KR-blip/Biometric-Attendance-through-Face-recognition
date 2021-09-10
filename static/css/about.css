@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body
+{ background-color: mediumpurple;}
+
+.login-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  width: 1300px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background:white;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  height:490px;
+  
+  
+}
+h2{
+  color:red;
+  font-family: 'Bebas Neue', cursive;
+
+
+
+
+}
+
+html{
+  
+  margin-top: 100px;
+   
+}
+.container{
+  background: transparent;
+}
+
+.our-team{
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px 15px 30px;
+  background: #fff;
+
+}
+.our-team .pic{
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 25px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+  background: #17bebb;
+  
+}
+.pic img{
+  width: 100%;
+  height: 20%;
+  
+}
+.our-team .title{
+  font-weight: 600;
+  color: #2e282a;
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 7px 0;
+}
+.our-team .post{
+  color: #17bebb;
+  text-transform: capitalize;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "compass/css3";
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background: mediumpurple;
+  text-align: center;  /* fallback for old browsers */
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height:15rem;
+    width: 18rem;
+    background-color:white;
+    color:black;
+    margin: 50px;
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  img{
+    width: 100%;
+    height: 80%; 
+    
+    
+  }
+  .containn {
+  font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+    display: flex;
+    position: absolute; /* taken out of the normal flow of the document */
+    top: 56%; /* moved down by 50% of the screen height */
+    transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+    width: 100%; /* needs to be defined to keep the default block behavior */
+    left: 20%;
+    padding-bottom: 3px;
+  
+    
+  }
+  h3{
+    padding: 7px;
+    text-align:center;
+    font-weight:bolder;
+    font-size:5rem;
+    margin: auto;
+  }
+
+  .boxx{
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2%;
+    padding: 5px;
+    background-color: aliceblue;
+    color: black;
+   
+}
+.msg{
+  box-sizing: border-box;
+  margin-left: 30%;
+  margin-right: 30%;
+  
+  padding: 5px;
+  color:black;
+  box-shadow: white;
+  height:35px;
+  background: white;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.bn30 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background: violet;
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.bn30 .text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: unset;
+}
+
+.bn30:after {
+  content: "";
+  border-radius: 18px;
+  position: absolute;
+  margin: 4px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}

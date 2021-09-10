@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/admin_up.css"/>
+    
+</head>
+<title>Hello</title>
+<body>
+    {% extends "ad_header.html" %}
+    {% block content %}
+    <div class='boxx'>
+        Update Attendance
+    </div>
+    <div class="login-box">
+    <form action='/ad_down' method="POST">
+      <div class="user-box">
+        <input type="text" name="empid" required="">
+        <label>Enter Employee-ID</label>
+      </div>
+
+      <div class="user-box">
+        <input type="time" name="e_time" required="">
+        <label>Entry Time</label>
+      </div>
+
+      <div class="user-box">
+        <input type="time" name="l_time" required="">
+        <label>Leaving Time</label>
+      </div>
+
+      
+      <div class="user-box">
+        Enter Date
+        <input type="date" name="daate" required="">
+        
+      </div>
+
+      <div class="user-box">
+        <input type="text" name="day_s" required="">
+        <label>Enter Weekday(e.g. Friday,Sunday)</label>
+      </div>
+
+<button>Search</button>
+    </form>
+  </div>
+  {% for message in get_flashed_messages() %}
+ 
+        <div class="msg">
+          {{message}}
+        </div>
+          {% endfor %}
+   
+<div class="flf">
+    <a href="/ad_view"><button class="bn30">View Attendance</button></a>
+    <a href="/ad_today"><button class="bn30">Today's Report</button></a>
+  </div>
+    {% endblock %}
+</body>
+</html>
+
+
+    

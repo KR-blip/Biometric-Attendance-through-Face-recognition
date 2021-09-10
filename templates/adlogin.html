@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin_home.css') }}"/> 
+
+    <script src="static/js/file.js"></script>
+</head>
+<body>
+  {% extends "ad_header.html" %}
+    {% block content %}
+
+    <div class="boxx">
+      <marquee>Welcome Admin. </marquee>
+  </div>
+    <div class='containn'>
+      <a href="/train">
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/19/72/14/197214de7cdd4b4a79dd9924a254196f.gif" alt="Avatar" >
+            
+                <h3><b>Face Training</b></h3>
+              </div>     
+            </a>
+            
+      <a href="/ad_down">
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/49/e7/80/49e7800d6828dbf1abbb89c9f42a1f75.png" alt="Avatar">
+        
+            <h3><b>Update attendance</b></h3>
+            
+        
+        </div>
+      </a>
+
+        
+    </div>
+
+  
+    {% endblock %}
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"/> 
+
+  </head>
+<body>
+  {% extends "Tablee.html" %}
+    {% block content %}
+
+    <div class="boxx">
+      <marquee>Welcome {{value}}. </marquee>
+  </div>
+
+
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Entry Time</th>
+        <th>Leaving Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for place in places %}
+        <tr>
+          <td>{{ place.day }}</td>
+          <td>{{ place.date }}</td>
+          <td>{{ place.time }}</td>
+          <td>{{ place.leave_t }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <a href="\attdownload"><button class="bn30">Go back</button></a>
+{% endblock %}
+
+
+  
+</body>
+</html>

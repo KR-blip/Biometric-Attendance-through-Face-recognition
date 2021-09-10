@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/css/train.css"/>
+    
+</head>
+<title>Hello</title>
+<body>
+    {% extends "ad_header.html" %}
+    {% block content %}
+    <div class="boxx">
+      <marquee>Fill in the correct details</marquee>
+  </div>
+  {% for message in get_flashed_messages() %}
+  <div class="msg">
+    {{message}} Your Employee-id is {{value}}
+  </div>
+    {% endfor %}
+
+    
+ 
+   <div class="whole">
+    <img src="https://i.pinimg.com/originals/84/22/0a/84220a2fc13e5f62e5f4da4ee1d15112.gif">
+    <div class="login-box">
+    <br>
+    <form action='/train' method="POST">
+    
+        
+      <div class="user-box">
+        <input type="text" name="name" required="">
+        <label>Name</label>
+      </div>
+      <div class="user-box">
+        <input type="email" name="email" required="">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        Date of Birth
+        <input type="date" name="dob" required="">
+        
+      </div>
+      <div class="user-box">
+        Date of joining
+        <input type="date" name="doj" required="">
+        
+      </div>
+     <button>Next</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+</body>
+</html>
+
+
+    

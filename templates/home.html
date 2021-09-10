@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"/> 
+
+    <script src="static/js/file.js"></script>
+</head>
+<body>
+  {% extends "header.html" %}
+    {% block content %}
+
+    <div class="boxx">
+      <marquee>Welcome user. If you haven't trained your face, contact admin.</marquee>
+  </div>
+  
+  {% for message in get_flashed_messages() %}
+  <div class="msg">
+    {{message}} {{value}}
+  </div>
+  {% endfor %}
+    <div class='containn'>
+      <a href="\recog">
+        <div class="card">
+            <img src="https://img.freepik.com/free-vector/attendance-concept-businessman-holding-checklist-vector-flat-design_149152-172.jpg?size=338&ext=jpg" alt="Avatar" >
+            
+                <h3><b>Mark Your Attendance</b></h3>
+              </div>     
+            </a>
+            
+      <a href="\attdownload">
+        <div class="card">
+            <img src="https://static.wixstatic.com/media/39420c_b4c6226c7e8d43b591ef3f0c9ae73305~mv2.gif" alt="Avatar">
+        
+            <h3><b>View Attendance Report</b></h3>
+            
+        
+        </div>
+      </a>
+        
+    </div>
+
+  
+    {% endblock %}
+  
+</body>
+</html>
